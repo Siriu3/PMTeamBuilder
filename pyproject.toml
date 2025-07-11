@@ -1,0 +1,52 @@
+[project]
+name = "pmteambuilder"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "刘奕辰",email = "1070136128@qq.com"}
+]
+readme = "README.md"
+requires-python = "=3.10.0"
+dependencies = [
+    "flask (>=3.1.1,<4.0.0)",
+    "flask-jwt-extended (>=4.7.1,<5.0.0)",
+    "flask-restful (>=0.3.10,<0.4.0)",
+    "flask-cors (>=6.0.0,<7.0.0)",
+    "flask-sqlalchemy (>=3.1.1,<4.0.0)",
+    "psycopg2-binary (>=2.9.10,<3.0.0)",
+    "alembic (>=1.15.2,<2.0.0)",
+    "flask-bcrypt (>=1.0.1,<2.0.0)",
+    "flask-login (>=0.6.3,<0.7.0)",
+    "flask-wtf (>=1.2.2,<2.0.0)",
+    "email-validator (>=2.2.0,<3.0.0)",
+    "flask-caching (>=2.3.1,<3.0.0)",
+    "redis (>=6.1.0,<7.0.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "aiohttp (>=3.11.18,<4.0.0)",
+    "whoosh (>=2.7.4,<3.0.0)",
+    "elasticsearch (>=9.0.1,<10.0.0)",
+    "flask-elasticsearch (>=0.2.5,<0.3.0)",
+    "python-dotenv (>=1.1.0,<2.0.0)",
+    "marshmallow (>=4.0.0,<5.0.0)",
+    "flask-marshmallow (>=1.3.0,<2.0.0)",
+    "marshmallow-sqlalchemy (>=1.4.2,<2.0.0)",
+    "pyjwt (>=2.10.1,<3.0.0)",
+    "pyqrcode (>=1.2.1,<2.0.0)",
+    "shortuuid (>=1.0.13,<2.0.0)",
+    "flask-migrate (>=4.1.0,<5.0.0)",
+    "flask-mail (>=0.10.0,<0.11.0)",
+    "nanoid (>=2.0.0,<3.0.0)",
+    "pandas (>=2.3.0,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "pmteambuilder", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+flake8 = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
